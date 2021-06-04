@@ -27,7 +27,7 @@ export default function Home() {
           amet molestiae natus, quidem temporibus tenetur dolor! Corporis
           laudantium saepe optio.
         </p>
-        <Link href="/listing">
+        <Link href="/posts">
           <a className={styles.btn}>See Lisitng</a>
         </Link>
       </div>
