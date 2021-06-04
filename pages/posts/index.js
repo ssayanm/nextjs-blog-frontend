@@ -17,7 +17,7 @@ const index = ({ blogs }) => {
     <div>
       <h1>Listing</h1>
       {blogs.map((blog) => (
-        <Link href={"/posts/" + blog.id} key={blog.id}>
+        <Link href={`/posts/${blog.slug}`} key={blog.id}>
           <a className={styles.single}>
             <h3>{blog.title}</h3>
           </a>

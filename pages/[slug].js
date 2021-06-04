@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const res = await fetch(`http://localhost:1347/blogs?slug=${slug}`);
+  const res = await fetch(`http://localhost:1347/posts?slug=${slug}`);
   const data = await res.json();
   const post = data[0];
 
@@ -39,13 +39,13 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const Details = ({ post }) => {
+const Details = ({ blogs }) => {
   return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
+      <h1>{blogs.title}</h1>
+      <p>{blogs.content}</p>
 
-      <p>{post.author}</p>
+      <p>{blogs.author}</p>
     </div>
   );
 };
