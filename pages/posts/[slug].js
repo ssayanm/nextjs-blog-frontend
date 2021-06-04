@@ -5,7 +5,7 @@ export const getStaticPaths = async () => {
   // map data to an array of path objects with params (id)
   const paths = data.map((blog) => {
     return {
-      params: { id: blog.id.toString() },
+      params: { slug: blog.id.toString() },
     };
   });
 
@@ -16,7 +16,8 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const id = context.params.id;
+  console.log(context);
+  const id = context.params.slug;
   const res = await fetch("http://localhost:1347/blogs/" + id);
   const data = await res.json();
 
