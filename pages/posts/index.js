@@ -16,13 +16,14 @@ const index = ({ blogs }) => {
   return (
     <div>
       <h1>Listing</h1>
-      {blogs.map((blog) => (
-        <Link href={`/posts/${blog.slug}`} key={blog.id}>
-          <a className={styles.single}>
-            <h3>{blog.title}</h3>
-          </a>
-        </Link>
-      ))}
+      {blogs &&
+        blogs.map((blog) => (
+          <Link href={`/posts/${blog.slug}`} key={blog.id}>
+            <a className={styles.single}>
+              <h3>{blog.title}</h3>
+            </a>
+          </Link>
+        ))}
     </div>
   );
 };

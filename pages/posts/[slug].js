@@ -15,17 +15,6 @@ export const getStaticPaths = async () => {
   };
 };
 
-// export const getStaticProps = async (context) => {
-//   const id = context.params.slug;
-
-//   const res = await fetch("http://localhost:1347/blogs/" + id);
-//   const data = await res.json();
-
-//   return {
-//     props: { blogs: data },
-//   };
-// };
-
 // for each individual page: get the data for that page
 export async function getStaticProps({ params }) {
   const { slug } = params;
