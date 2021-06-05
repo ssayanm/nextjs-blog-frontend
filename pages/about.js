@@ -1,13 +1,11 @@
 import React from "react";
 import Head from "next/head";
+import Meta from "../components/Meta";
 
 const About = () => {
   return (
     <React.Fragment>
-      <Head>
-        <title>Next Js Blog | About</title>
-        <meta name="keywords" content="Sayan's blog" />
-      </Head>
+      <Meta title="about" />
       <div>
         <h1>About Page</h1>
         <p>

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,10 +8,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Next Js Blog | Home</title>
-        <meta name="keywords" content="Sayan's blog" />
-      </Head>
       <div>
         <h1 className={styles.title}>hello soumi</h1>
         <p className={styles.text}>

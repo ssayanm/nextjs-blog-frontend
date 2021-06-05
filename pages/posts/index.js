@@ -1,6 +1,7 @@
 import styles from "../../styles/Listing.module.css";
 import Link from "next/link";
 import axios from "axios";
+import Meta from "../../components/Meta";
 
 export const getStaticProps = async () => {
   try {
