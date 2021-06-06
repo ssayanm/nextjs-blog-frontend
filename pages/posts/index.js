@@ -14,7 +14,6 @@ export const getStaticProps = async () => {
 const index = ({ blogs }) => {
   return (
     <div>
-      <h1>Listing</h1>
       <BlogList blogs={blogs} />
     </div>
   );

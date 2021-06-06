@@ -1,3 +1,6 @@
+import BlogDetails from "../../components/BlogDetails";
+import BlogList from "../../components/BlogList";
+
 export const getStaticPaths = async () => {
   const res = await fetch(`${process.env.NEXT_API_URL}/blogs/`);
   const data = await res.json();
@@ -21,6 +24,7 @@ export async function getStaticProps({ params }) {
 
   const res = await fetch(`${process.env.NEXT_API_URL}/blogs/?slug=${slug}`);
   const data = await res.json();
+  console.log(data);
   const post = data[0];
 
   return {
@@ -31,10 +35,7 @@ export async function getStaticProps({ params }) {
 const Details = ({ post }) => {
   return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-
-      <p>{post.author}</p>
+      <BlogDetails {...post} />
     </div>
   );
 };
