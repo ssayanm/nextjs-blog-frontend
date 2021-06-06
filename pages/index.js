@@ -6,9 +6,6 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const url = process.env.NEXT_API_URL;
-  const url1 = process.env.NEXT_PUBLIC_ENV_LOCAL_VARIABLE;
-  console.log(url, url1);
   return (
     <React.Fragment>
       <div>

@@ -3,9 +3,11 @@ import Link from "next/link";
 import axios from "axios";
 import Meta from "../../components/Meta";
 
+// const { NEXT_API_URL } = process.env;
+
 export const getStaticProps = async () => {
   try {
-    const res = await axios.get("http://localhost:1347/blogs/");
+    const res = await axios.get(`${process.env.NEXT_API_URL}/blogs/`);
     const blogs = res.data;
     return { props: { blogs } };
   } catch (error) {
