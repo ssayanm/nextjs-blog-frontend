@@ -24,7 +24,7 @@ export async function getStaticProps({ params }) {
 
   const res = await fetch(`${process.env.NEXT_API_URL}/blogs/?slug=${slug}`);
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   const post = data[0];
 
   return {
@@ -35,7 +35,8 @@ export async function getStaticProps({ params }) {
 const Details = ({ post }) => {
   return (
     <div>
-      <BlogDetails {...post} />
+      <h2>{post.title}</h2>
+      <p>{post.content}</p>
     </div>
   );
 };

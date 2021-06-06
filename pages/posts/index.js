@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 import BlogList from "../../components/BlogList";
 
 export const getStaticProps = async () => {
@@ -14,7 +15,15 @@ export const getStaticProps = async () => {
 const index = ({ blogs }) => {
   return (
     <div>
-      <BlogList blogs={blogs} />
+      {/* loop over the posts and show them */}
+      {blogs &&
+        blogs.map((post) => (
+          <Link href={`posts/${post.slug}`} key={post.id}>
+            <a>
+              <h2>{post.title}</h2>
+            </a>
+          </Link>
+        ))}
     </div>
   );
 };
