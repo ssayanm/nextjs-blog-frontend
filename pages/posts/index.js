@@ -16,14 +16,8 @@ const index = ({ blogs }) => {
   return (
     <div>
       {/* loop over the posts and show them */}
-      {blogs &&
-        blogs.map((post) => (
-          <Link href={`posts/${post.slug}`} key={post.id}>
-            <a>
-              <h2>{post.title}</h2>
-            </a>
-          </Link>
-        ))}
+
+      <BlogList blogs={blogs} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import BlogDetails from "../../components/BlogDetails";
+import BlogDetails from "../../components/BlogItem";
 import BlogList from "../../components/BlogList";
 
 export const getStaticPaths = async () => {
