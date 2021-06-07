@@ -1,12 +1,12 @@
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Header from "./Header";
 import Meta from "./Meta";
 
 const Layout = ({ children }) => {
   return (
-    <div className="content">
+    <div className="md:container md:mx-auto text-gray-800">
       <Meta />
-      <Navbar />
+      <Header />
       {children}
       <Footer />
     </div>

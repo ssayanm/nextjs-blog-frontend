@@ -1,6 +1,3 @@
-import BlogDetails from "../../components/BlogItem";
-import BlogList from "../../components/BlogList";
-
 export const getStaticPaths = async () => {
   const res = await fetch(`${process.env.NEXT_API_URL}/blogs/`);
   const data = await res.json();

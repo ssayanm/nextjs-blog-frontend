@@ -1,5 +1,7 @@
 const Footer = () => {
-  return <footer>My footer- copyright 2021</footer>;
+  return (
+    <footer className="flex justify-center">My footer- copyright 2021</footer>
+  );
 };
 
 export default Footer;
