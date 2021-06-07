@@ -4,7 +4,7 @@ import Meta from "./Meta";
 
 const Layout = ({ children }) => {
   return (
-    <div className="md:container md:mx-auto text-gray-800">
+    <div className="bg-gray-100  text-gray-800 font-sans antialiased ">
       <Meta />
       <Header />
       {children}

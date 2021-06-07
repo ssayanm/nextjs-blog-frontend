@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div>
-      <nav>
+    <div className="h-24 flex justify-center items-center">
+      <nav className="m-0">
         <div className="p4">
           <Image
             src="/phoenix-framework.svg"

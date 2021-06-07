@@ -20,8 +20,8 @@ export default function Home() {
       <div>
         <h4 className="mt-12 pb-2 border-b border-red-200">Latest Recipes</h4>
 
-        <div>
-          <div>
+        <div className="mt-8">
+          <div className="bg-white rounded overflow-hidden shadow">
             <Image
               src="/phoenix-framework.svg"
               alt="site logo"
