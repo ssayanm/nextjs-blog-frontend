@@ -6,7 +6,8 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-gray-100  text-gray-800 font-sans antialiased ">
       <Meta />
-      <Header />
+
+      <Header transparent />
       {children}
       <Footer />
     </div>

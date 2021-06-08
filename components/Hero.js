@@ -3,39 +3,61 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Before they sold out
-            <span className="hidden lg:inline-block">readymade gluten</span>
-          </h1>
-          <p className="mb-8 leading-relaxed">
-            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
-            mlkshk tote bag selvage hot chicken authentic tumeric truffaut
-            hexagon try-hard chambray.
-          </p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Button
-            </button>
-            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-              Button
-            </button>
+    <div
+      className="relative pt-16 pb-32 flex content-center items-center justify-center"
+      style={{
+        minHeight: "75vh",
+      }}
+    >
+      <div className="absolute top-0 w-full h-full bg-center bg-cover">
+        <Image
+          alt="Gym"
+          src="/gym.jpg"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+        <span
+          id="blackOverlay"
+          className="w-full h-full absolute opacity-60 bg-black"
+        ></span>
+      </div>
+      <div className="container relative mx-auto">
+        <div className="items-center flex flex-wrap">
+          <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div className="pr-12">
+              <h1 className="text-white font-semibold text-5xl">
+                Your story starts with us.
+              </h1>
+              <p className="mt-4 text-lg text-gray-300">
+                This is a simple example of a Landing Page you can build using
+                Tailwind Starter Kit. It features multiple CSS components based
+                on the Tailwindcss design system.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-2/3 w-5/6">
-          <Image
-            src="/hero-img.jpg"
-            alt="Picture of the author"
-            width={720}
-            height={600}
-            className="object-cover object-center rounded"
-          />
-        </div>
       </div>
-    </section>
+      <div
+        className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style={{ height: "70px" }}
+      >
+        <svg
+          className="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            className="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
   );
 };
 
