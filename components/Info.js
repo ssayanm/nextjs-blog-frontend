@@ -12,7 +12,7 @@ const Info = () => {
               src="/gyminfo.jpg"
               width={640}
               height={960}
-              // objectFit="cover"
+              objectFit="cover"
               quality={100}
               className="rounded-lg shadow-lg"
             />

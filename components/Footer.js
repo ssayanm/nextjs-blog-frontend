@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="relative bg-gray-300 pt-8 pb-6">
@@ -32,25 +34,25 @@ const Footer = () => {
                 className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-twitter"></i>
+                <FaTwitter />
               </button>
               <button
                 className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-facebook-square"></i>
+                <FaFacebook />
               </button>
               <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-indigo-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-dribbble"></i>
+                <FaLinkedin />
               </button>
               <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-red-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-github"></i>
+                <FaInstagram />
               </button>
             </div>
           </div>
@@ -64,7 +66,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation"
+                      href="/"
                     >
                       About Us
                     </a>
@@ -72,7 +74,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
+                      href="/"
                     >
                       Blog
                     </a>
@@ -80,17 +82,9 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial"
+                      href="/"
                     >
                       Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free"
-                    >
-                      Free Products
                     </a>
                   </li>
                 </ul>
@@ -103,15 +97,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                    >
-                      MIT License
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms"
+                      href="/"
                     >
                       Terms & Conditions
                     </a>
@@ -119,7 +105,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy"
+                      href="/"
                     >
                       Privacy Policy
                     </a>
@@ -127,7 +113,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us"
+                      href="/"
                     >
                       Contact Us
                     </a>
@@ -141,12 +127,13 @@ const Footer = () => {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()} Tailwind Starter Kit by{" "}
+              Copyright © {new Date().getFullYear()} The Fitness Zone <br />
+              Website designed by{" "}
               <a
-                href="https://www.creative-tim.com"
+                href="https://www.sayanmukherjee.com/"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Creative Tim
+                Sayan Mukherjee
               </a>
               .
             </div>
