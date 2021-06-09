@@ -18,7 +18,7 @@ const Header = (props) => {
             <a
               className={
                 (props.transparent ? "text-white" : "text-gray-800") +
-                "text-sm font-bold leading-relaxed flex justify-center items-center mr-4 py-2 whitespace-nowrap uppercase"
+                "text-base font-bold leading-relaxed flex justify-center items-center mr-4 py-2 whitespace-nowrap uppercase"
               }
               href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
             >
@@ -30,7 +30,7 @@ const Header = (props) => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-10 h-10 text-green-400 p-2 bg-gray-100 rounded-full hover:text-gray-700 "
+                className="w-10 h-10  p-2  text-white bg-orange-600 rounded-full hover:text-orange-600 hover:bg-gray-100"
               >
                 <path
                   strokeLinecap="round"
@@ -39,8 +39,8 @@ const Header = (props) => {
                   d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span className="ml-3 text-xl text-white font-bold tracking-wider hover:text-green-400 ">
-                Sayan Mukherjee
+              <span className="ml-3 text-xl text-white font-bold tracking-wider hover:text-orange-600 ">
+                The Fitness Zone
               </span>
             </a>
           </Link>
@@ -82,9 +82,8 @@ const Header = (props) => {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
                   }
                 >
                   Home
@@ -97,9 +96,8 @@ const Header = (props) => {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
                   }
                 >
                   About
@@ -112,9 +110,8 @@ const Header = (props) => {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
                   }
                 >
                   Services
@@ -127,9 +124,8 @@ const Header = (props) => {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
                   }
                 >
                   Blog
@@ -143,12 +139,22 @@ const Header = (props) => {
                   (props.transparent
                     ? "bg-white text-gray-800 active:bg-gray-100"
                     : "bg-pink-500 text-white active:bg-pink-600") +
-                  " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  " text-base font-bold uppercase px-4 py-2 rounded shadow flex justify-center items-center hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 hover:bg-orange-600 hover:text-white "
                 }
                 type="button"
                 style={{ transition: "all .15s ease" }}
               >
-                <i className="fas fa-arrow-alt-circle-down"></i> Download
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 "
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span className="ml-1 text-xl  font-bold tracking-wider ">
+                  (012)-555-999
+                </span>
               </button>
             </li>
           </ul>
