@@ -134,15 +134,15 @@ const Header = (props) => {
             </li>
 
             <li className="flex items-center">
-              <button
+              <a
                 className={
                   (props.transparent
-                    ? "bg-white text-gray-800 active:bg-gray-100"
+                    ? " text-orange-600 active:bg-gray-100"
                     : "bg-pink-500 text-white active:bg-pink-600") +
-                  " text-base font-bold uppercase px-4 py-2 rounded shadow flex justify-center items-center hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 hover:bg-orange-600 hover:text-white "
+                  "  flex justify-center items-center px-4 py-2 rounded bg-transparent border border-orange-600 cursor-pointer transition duration-500 ease-in-out hover:bg-orange-600 hover:text-white "
                 }
                 type="button"
-                style={{ transition: "all .15s ease" }}
+                // style={{ transition: "all .15s ease" }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ const Header = (props) => {
                 <span className="ml-1 text-xl  font-bold tracking-wider ">
                   (012)-555-999
                 </span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>

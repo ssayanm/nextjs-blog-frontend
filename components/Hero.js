@@ -26,15 +26,17 @@ const Hero = () => {
       <div className="container relative mx-auto">
         <div className="items-center flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-            <div className="pr-12">
-              <h1 className="text-white font-semibold text-5xl">
-                Your story starts with us.
+            <div>
+              <h1 className="text-white font-semibold text-6xl">
+                Your fitness starts with
+                <span className="text-orange-600">us.</span>
               </h1>
 
               <p className="mt-4 text-lg text-gray-300">
-                This is a simple example of a Landing Page you can build using
-                Tailwind Starter Kit. It features multiple CSS components based
-                on the Tailwindcss design system.
+                Welcome to The Fitness Zone. A one stop solution for all your
+                fitness needs. We focus on pushing you to your absolute limit.
+                Download our complete brochure to get started today! For any
+                queries feel free to contact us.
               </p>
               <Link href="/">
                 <a className="btn">Download Brochure</a>

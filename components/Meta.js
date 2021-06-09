@@ -14,9 +14,9 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Sayan Web",
-  keywords: "web development, programming",
-  description: "Get the latest news in web dev",
+  title: "The Fitness Zone",
+  keywords: "gym, finess, body building",
+  description: "No pain, No gain shut up and train",
 };
 
 export default Meta;
