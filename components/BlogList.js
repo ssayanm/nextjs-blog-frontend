@@ -1,11 +1,11 @@
-import BlogItem from "./BlogItem";
+import BlogCard from "./BlogCard";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 const BlogList = ({ blogs }) => {
   return (
-    <section className=" pt-20 pb-48 bg-black text-white">
+    <section className="pt-48 pb-48 bg-black text-white">
       {" "}
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap justify-center text-center mb-24">
@@ -22,13 +22,18 @@ const BlogList = ({ blogs }) => {
         {/* Blog Card Wrapper*/}
         <div className="flex flex-wrap">
           {blogs.map((blog) => (
-            <BlogItem key={blog.id} {...blog} />
+            <div
+              className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
+              data-aos="flip-right"
+            >
+              <BlogCard key={blog.id} {...blog} />
+            </div>
           ))}
           {/*Card 1 */}
         </div>
         <div className="flex justify-center lg:mt-24">
           <Link href="/">
-            <a className="btn">Download Brochure</a>
+            <a className="btn">Read More</a>
           </Link>
         </div>
       </div>
