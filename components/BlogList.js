@@ -1,5 +1,7 @@
 import BlogItem from "./BlogItem";
 import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 const BlogList = ({ blogs }) => {
   return (
@@ -25,12 +27,12 @@ const BlogList = ({ blogs }) => {
             className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
             data-aos="flip-right"
           >
-            <div className="px-6 flex items-center flex-col h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="px-6 flex items-center flex-col h-full border border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 alt="Gym"
                 src="/trainer1.jpg"
-                width={250}
-                height={375}
+                width={720}
+                height={400}
                 objectFit="cover"
                 quality={100}
                 className="shadow-lg rounded max-w-full mx-auto"
@@ -43,20 +45,8 @@ const BlogList = ({ blogs }) => {
                   jianbing microdosing tousled waistcoat.
                 </p>
                 <div className="flex items-center flex-wrap">
-                  <a className="text-orange-600 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
+                  <a className="text-orange-600 inline-flex items-center font-bold md:mb-2 lg:mb-0">
+                    Learn More <FaArrowRight className="w-3 h-3 ml-2" />
                   </a>
                 </div>
               </div>
@@ -67,12 +57,12 @@ const BlogList = ({ blogs }) => {
             className="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
             data-aos="flip-right"
           >
-            <div className="px-6 flex items-center flex-col h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="px-6 flex items-center flex-col h-full border border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 alt="Gym"
                 src="/trainer2.jpg"
-                width={250}
-                height={375}
+                width={720}
+                height={400}
                 objectFit="cover"
                 quality={100}
                 className="shadow-lg rounded max-w-full mx-auto"
@@ -85,19 +75,7 @@ const BlogList = ({ blogs }) => {
                 </p>
                 <div className="flex items-center flex-wrap">
                   <a className="text-orange-600 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
+                    Learn More <FaArrowRight className="w-3 h-3 ml-2" />
                   </a>
                 </div>
               </div>
@@ -108,12 +86,12 @@ const BlogList = ({ blogs }) => {
             className="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
             data-aos="flip-right"
           >
-            <div className="px-6 flex items-center flex-col h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="px-6 flex items-center flex-col h-full border border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 alt="Gym"
                 src="/trainer3.jpg"
-                width={250}
-                height={375}
+                width={720}
+                height={400}
                 objectFit="cover"
                 quality={100}
                 className="shadow-lg rounded  mx-auto text-center"
@@ -126,24 +104,17 @@ const BlogList = ({ blogs }) => {
                 </p>
                 <div className="flex items-center flex-wrap">
                   <a className="text-orange-600 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
+                    Learn More <FaArrowRight className="w-3 h-3 ml-2" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center lg:mt-24">
+          <Link href="/">
+            <a className="btn">Download Brochure</a>
+          </Link>
         </div>
       </div>
     </section>
