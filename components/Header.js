@@ -138,7 +138,7 @@ const Header = (props) => {
                   (props.transparent
                     ? " text-orange-600 active:bg-gray-100"
                     : "bg-pink-500 text-white active:bg-pink-600") +
-                  "  flex justify-center items-center px-4 py-2 rounded bg-transparent border border-orange-600 cursor-pointer transition duration-500 ease-in-out hover:bg-orange-600 hover:text-white "
+                  "  flex justify-center items-center lg:ml-6 px-4 py-2 rounded bg-transparent border border-orange-600 cursor-pointer transition duration-500 ease-in-out hover:bg-orange-600 hover:text-white "
                 }
                 type="button"
                 // style={{ transition: "all .15s ease" }}
