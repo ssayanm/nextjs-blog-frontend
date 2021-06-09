@@ -6,9 +6,9 @@ import { FaArrowRight } from "react-icons/fa";
 const BlogList = ({ blogs }) => {
   return (
     <section className=" pt-20 pb-48 bg-black text-white">
-      {/* {blogs.map((blog) => (
-          <BlogItem key={blog.id} {...blog} />
-       ))}*/}
+      {blogs.map((blog) => (
+        <BlogItem key={blog.id} {...blog} />
+      ))}
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
