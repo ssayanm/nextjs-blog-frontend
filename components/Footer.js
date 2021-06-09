@@ -2,11 +2,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gray-300 pt-8 pb-6">
-      <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style={{ height: "80px" }}
-      >
+    <footer className="relative  pt-8 pb-6">
+      <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
         <svg
           className="absolute bottom-0 overflow-hidden"
           xmlns="http://www.w3.org/2000/svg"

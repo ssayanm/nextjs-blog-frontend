@@ -6,7 +6,10 @@ const Info = () => {
     <section className="relative py-20 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="items-center flex flex-wrap">
-          <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <div
+            className="w-full md:w-4/12 ml-auto mr-auto px-4"
+            data-aos="fade-right"
+          >
             <Image
               alt="Gym"
               src="/gyminfo.jpg"
@@ -18,7 +21,10 @@ const Info = () => {
             />
           </div>
 
-          <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div
+            className="w-full md:w-5/12 ml-auto mr-auto px-4"
+            data-aos="fade-left"
+          >
             <div className="md:pr-12">
               <span className="text-xm text-orange-600">About us</span>
               <h3 className="text-4xl uppercase font-bold">

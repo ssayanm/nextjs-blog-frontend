@@ -20,7 +20,8 @@ const Header = (props) => {
                 (props.transparent ? "text-white" : "text-gray-800") +
                 "text-base font-bold leading-relaxed flex justify-center items-center mr-4 py-2 whitespace-nowrap uppercase"
               }
-              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+              data-aos="fade-right"
+              data-aos-delay="400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +141,8 @@ const Header = (props) => {
                     : "bg-pink-500 text-white active:bg-pink-600") +
                   "  flex justify-center items-center lg:ml-6 px-4 py-2 rounded bg-transparent border border-orange-600 cursor-pointer transition duration-500 ease-in-out hover:bg-orange-600 hover:text-white "
                 }
-                type="button"
+                data-aos="fade-left"
+                data-aos-delay="400"
                 // style={{ transition: "all .15s ease" }}
               >
                 <svg

@@ -24,7 +24,8 @@ const BlogList = ({ blogs }) => {
           {blogs.map((blog) => (
             <div
               className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
-              data-aos="flip-right"
+              data-aos="fade-up"
+              data-aos-delay="400"
             >
               <BlogCard key={blog.id} {...blog} />
             </div>
