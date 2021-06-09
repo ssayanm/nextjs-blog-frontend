@@ -8,7 +8,7 @@ const BlogDetails = ({ blog }) => {
   return (
     <section className="pt-48 pb-48 bg-black text-white">
       <div className="container px-4 mx-auto">
-        <div className="flex flex-wrap justify-center text-center mb-8">
+        <div className="flex flex-wrap justify-center text-center mb-6">
           <div className="w-full lg:w-6/12 px-4">
             <h2 className="text-4xl font-semibold uppercase">{title}</h2>
             <p className="mt-1 text-sm text-gray-500 uppercase font-semibold leading-relaxed">
@@ -29,13 +29,13 @@ const BlogDetails = ({ blog }) => {
                 className="shadow-lg rounded max-w-full mx-auto"
               />
 
-              <div className="pt-8 pb-8">
+              <div className="pt-6">
                 <p className="mt-4 text-sm text-white uppercase font-semibold w-full lg:w-1/2 mx-auto">
                   {content}
                 </p>
               </div>
               <Link href="/contact">
-                <a className="btn">Contact Us</a>
+                <a className="btn">Contact</a>
               </Link>
             </div>
           </div>

@@ -25,7 +25,7 @@ const BlogList = ({ blogs }) => {
             <div
               className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="800"
             >
               <BlogCard key={blog.id} {...blog} />
             </div>

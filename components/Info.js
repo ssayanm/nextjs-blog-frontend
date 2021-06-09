@@ -4,8 +4,8 @@ import { FaDumbbell, FaHdd, FaUsers } from "react-icons/fa";
 const Info = () => {
   return (
     <section className="relative py-20 bg-black text-white">
-      <div className="container mx-auto px-4">
-        <div className="items-center flex flex-wrap">
+      <div className="container mx-auto ">
+        <div className="items-center flex flex-wrap px-4">
           <div
             className="w-full md:w-4/12 ml-auto mr-auto px-4"
             data-aos="fade-right"
