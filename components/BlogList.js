@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const BlogList = ({ blogs }) => {
   return (
-    <section className="pt-48 pb-48 bg-black text-white">
+    <section className="py-32 bg-black text-white">
       {" "}
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap justify-center text-center mb-24">

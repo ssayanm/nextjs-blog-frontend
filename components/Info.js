@@ -3,7 +3,7 @@ import { FaDumbbell, FaHdd, FaUsers } from "react-icons/fa";
 
 const Info = () => {
   return (
-    <section className="relative py-20 bg-black text-white">
+    <section className="relative py-32 bg-black text-white">
       <div className="container mx-auto ">
         <div className="items-center flex flex-wrap px-4">
           <div
@@ -14,7 +14,7 @@ const Info = () => {
               alt="Gym"
               src="/gyminfo.jpg"
               width={640}
-              height={960}
+              height={860}
               objectFit="cover"
               quality={100}
               className="rounded-lg shadow-lg"
