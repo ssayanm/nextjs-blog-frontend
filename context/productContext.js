@@ -40,19 +40,31 @@ export const ProductContext = createContext();
 //   }
 // };
 
+// export async function getStaticProps() {
+//   //   const { slug } = params;
+
+//   const res = await axios.get(`${process.env.NEXT_API_URL}/products/`);
+//   const products = res.data;
+//   return { props: { products } };
+// }
+
+// console.log(products);
+
 export const ProductProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
+
   // const { value, children } = props;
-  // useEffect(() => {
-  //   setLoading(true);
-  //   axios.get(`http://localhost:1347/products/`).then((response) => {
-  //     const products = response.data;
-  //     setProducts(products);
-  //     setLoading(false);
-  //   });
-  //   return () => {};
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    axios.get(`${process.env.url}/products/`).then((response) => {
+      const products = response.data;
+      console.log(products);
+      setProducts(products);
+      setLoading(false);
+    });
+    return () => {};
+  }, []);
 
   // const getStaticProps = async () => {
   //   try {

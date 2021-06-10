@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useContext } from "react";
 import Meta from "../components/Meta";
 import { ProductContext } from "../context/productContext";
@@ -16,23 +17,20 @@ import { ProductContext } from "../context/productContext";
 //     props: { data }, // will be passed to the page component as props
 //   };
 // }
-export async function getServerSideProps({ params }) {
-  //   const { slug } = params;
+// export async function getStaticProps({ params }) {
+//   //   const { slug } = params;
 
-  const res = await fetch(`${process.env.NEXT_API_URL}/products/`);
-  const data = await res.json();
-  // console.log(data);
-  const products = data[0];
+//   const res = await axios.get(`${process.env.url}/products/`);
+//   const products = res.data;
+//   return { props: { products } };
+// }
 
-  return {
-    props: { products },
-  };
-}
+const prod = () => {
+  const { products } = useContext(ProductContext);
 
-const prod = ({ products }) => {
-  //   const { products } = useContext(ProductContext);
-
-  console.log(products);
+  {
+    console.log();
+  }
   return (
     <section className="py-52 bg-black text-white">
       <Meta title="Services" />
@@ -44,11 +42,9 @@ const prod = ({ products }) => {
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
             <h2 className="text-4xl font-semibold uppercase">Services Page</h2>
-            <p className="text-lg leading-relaxed m-4">
-              Learn all the expert tips from all our experienced trainers.
-              <br /> "The difference between the impossible and the possible
-              lies in a person's determination." - Tommy Lasorda
-            </p>
+            {products.map((product) => (
+              <p className="text-lg leading-relaxed m-4">{product.title}</p>
+            ))}
           </div>
         </div>
       </div>
