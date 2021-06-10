@@ -1,7 +1,7 @@
-import BlogCard from "./BlogCard";
+import ProductCard from "./ProductCard";
 import Link from "next/link";
 
-const BlogList = ({ blogs, showLink }) => {
+const ProductList = ({ products, showLink }) => {
   return (
     <section className="py-32 bg-black text-white">
       <div
@@ -11,7 +11,7 @@ const BlogList = ({ blogs, showLink }) => {
       >
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
-            <h2 className="text-4xl font-semibold uppercase">Our Blog</h2>
+            <h2 className="text-4xl font-semibold uppercase">Our Products</h2>
             <p className="text-lg leading-relaxed m-4">
               Learn all the expert tips from all our experienced trainers.
               <br /> "The difference between the impossible and the possible
@@ -20,20 +20,20 @@ const BlogList = ({ blogs, showLink }) => {
           </div>
         </div>
 
-        {/* Blog Card Wrapper*/}
+        {/* Product Card Wrapper*/}
         <div className="flex flex-wrap">
-          {blogs.map((blog) => (
+          {products.map((product) => (
             <div
               className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
-              key={blog.id}
+              key={product.id}
             >
-              <BlogCard {...blog} />
+              <ProductCard {...product} />
             </div>
           ))}
         </div>
         <div className="flex justify-center lg:mt-24">
           {showLink && (
-            <Link href="/blog-posts" className="btn">
+            <Link href="/product-posts" className="btn">
               <a className="btn">Read More</a>
             </Link>
           )}
@@ -43,4 +43,4 @@ const BlogList = ({ blogs, showLink }) => {
   );
 };
 
-export default BlogList;
+export default ProductList;

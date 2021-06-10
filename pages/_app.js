@@ -18,9 +18,6 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  // const { products } = pageProps;
-  // const [myProducts] = useState(products);
-
   return (
     <ProductProvider>
       <Layout>
