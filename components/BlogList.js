@@ -3,10 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
-const BlogList = ({ blogs }) => {
+const BlogList = ({ blogs, showLink }) => {
   return (
     <section className="py-32 bg-black text-white">
-      {" "}
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
@@ -30,12 +29,13 @@ const BlogList = ({ blogs }) => {
               <BlogCard key={blog.id} {...blog} />
             </div>
           ))}
-          {/*Card 1 */}
         </div>
         <div className="flex justify-center lg:mt-24">
-          <Link href="/">
-            <a className="btn">Read More</a>
-          </Link>
+          {showLink && (
+            <Link href="/blog-posts" className="btn">
+              <a className="btn">Read More</a>
+            </Link>
+          )}
         </div>
       </div>
     </section>

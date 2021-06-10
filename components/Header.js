@@ -8,7 +8,7 @@ const Header = (props) => {
     <nav
       className={
         (props.transparent
-          ? "top-0 absolute z-50 w-full"
+          ? "top-0 absolute z-50 w-full "
           : "relative bg-white shadow-lg") +
         " flex flex-wrap items-center justify-between px-2 py-3 "
       }
@@ -77,7 +77,7 @@ const Header = (props) => {
           }
           id="example-navbar-warning"
         >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto pb-5 justify-center items-center">
+          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto justify-center items-center">
             <li className="flex items-center">
               <Link href="/">
                 <a
@@ -133,7 +133,19 @@ const Header = (props) => {
                 </a>
               </Link>
             </li>
-
+            <li className="flex items-center">
+              <Link href="/contact">
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
+                  }
+                >
+                  Contact
+                </a>
+              </Link>
+            </li>
             <li className="flex items-center">
               <a
                 className={

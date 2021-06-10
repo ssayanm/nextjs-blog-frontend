@@ -12,6 +12,8 @@ const Hero = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
+          data-aos="zoom-in"
+          data-aos-delay="0"
         />
         <span
           id="blackOverlay"
@@ -31,7 +33,7 @@ const Hero = () => {
               </h1>
 
               <p
-                className="mt-10 mb-8 text-lg text-gray-300"
+                className="mt-6 mb-4 text-lg text-gray-300"
                 data-aos="fade-up"
                 data-aos-delay="400"
               >

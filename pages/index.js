@@ -26,7 +26,7 @@ export default function Home({ blogs }) {
       <Info />
       <Trainers />
 
-      <BlogList blogs={blogs} />
+      <BlogList blogs={blogs} showLink />
     </div>
   );
 }

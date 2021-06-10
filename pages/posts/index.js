@@ -14,9 +14,7 @@ export const getStaticProps = async () => {
 
 const index = ({ blogs }) => {
   return (
-    <div>
-      {/* loop over the posts and show them */}
-
+    <div className="py-20 bg-black">
       <BlogList blogs={blogs} />
     </div>
   );
