@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import ProductProvider from "../context/productContext";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 
@@ -17,10 +17,16 @@ function MyApp({ Component, pageProps }) {
       offset: 50,
     });
   }, []);
+
+  // const { products } = pageProps;
+  // const [myProducts] = useState(products);
+
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ProductProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ProductProvider>
   );
 }
 
