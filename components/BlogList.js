@@ -6,7 +6,11 @@ import { FaArrowRight } from "react-icons/fa";
 const BlogList = ({ blogs, showLink }) => {
   return (
     <section className="py-32 bg-black text-white">
-      <div className="container px-4 mx-auto">
+      <div
+        className="container px-4 mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
             <h2 className="text-4xl font-semibold uppercase">Our Blog</h2>
@@ -23,10 +27,9 @@ const BlogList = ({ blogs, showLink }) => {
           {blogs.map((blog) => (
             <div
               className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
-              data-aos="fade-up"
-              data-aos-delay="800"
+              key={blog.id}
             >
-              <BlogCard key={blog.id} {...blog} />
+              <BlogCard {...blog} />
             </div>
           ))}
         </div>

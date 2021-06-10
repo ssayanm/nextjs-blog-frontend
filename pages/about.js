@@ -6,13 +6,13 @@ const About = () => {
   return (
     <section className="py-52 bg-black text-white">
       <Meta title="About" />
-      <div className="container px-4 mx-auto">
+      <div
+        className="container px-4 mx-auto "
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div className="flex flex-wrap justify-center text-center">
-          <div
-            className="w-full lg:w-6/12 px-4"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
+          <div className="w-full lg:w-6/12 px-4">
             <h2 className="text-4xl font-semibold uppercase">About Us</h2>
             <p className="text-lg leading-relaxed m-4">
               Learn all the expert tips from all our experienced trainers.
