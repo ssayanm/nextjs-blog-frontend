@@ -12,6 +12,10 @@ export function getStrapiMedia(url) {
     return url;
   }
 
+  if (url.startsWith("https://res.cloudinary.com")) {
+    return url;
+  }
+
   // Otherwise prepend the URL path with the Strapi URL
-  return `${process.env.NEXT_API_URL || "http://localhost:1347"}${url}`;
+  return `${process.env.url || "http://localhost:1347"}${url} || ` || url;
 }

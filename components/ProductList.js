@@ -23,12 +23,7 @@ const ProductList = ({ products, showLink }) => {
         {/* Product Card Wrapper*/}
         <div className="flex flex-wrap">
           {products.map((product) => (
-            <div
-              className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
-              key={product.id}
-            >
-              <ProductCard {...product} />
-            </div>
+            <ProductCard {...product} key={product.id} />
           ))}
         </div>
         <div className="flex justify-center lg:mt-24">

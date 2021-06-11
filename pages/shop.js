@@ -7,11 +7,11 @@ const prod = () => {
   const { products } = useContext(ProductContext);
 
   return (
-    <section className="py-20 bg-black text-white">
-      <Meta title="Services" />
+    <div className="py-20 bg-black text-white">
+      <Meta title="Shop" />
 
       <ProductList products={products} />
-    </section>
+    </div>
   );
 };
 

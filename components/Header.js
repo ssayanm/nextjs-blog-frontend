@@ -107,6 +107,20 @@ const Header = (props) => {
             </li>
 
             <li className="flex items-center">
+              <Link href="/shop">
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white  text-gray-800"
+                      : "text-gray-800 ") + " navlinks"
+                  }
+                >
+                  Shop
+                </a>
+              </Link>
+            </li>
+
+            <li className="flex items-center">
               <Link href="/services">
                 <a
                   className={
@@ -115,11 +129,10 @@ const Header = (props) => {
                       : "text-gray-800 ") + " navlinks"
                   }
                 >
-                  Services
+                  Our Services
                 </a>
               </Link>
             </li>
-
             <li className="flex items-center">
               <Link href="/posts">
                 <a
