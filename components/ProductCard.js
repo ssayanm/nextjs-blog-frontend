@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { getStrapiMedia } from "../media";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaCartPlus } from "react-icons/fa";
 
 const ProductCard = ({
   id,
@@ -11,6 +11,7 @@ const ProductCard = ({
   image,
   description,
   shortdescription,
+  price,
 }) => {
   return (
     <div className="w-full md:w-4/12  mb-10 px-4  ">
@@ -27,10 +28,17 @@ const ProductCard = ({
         <div className="p-6">
           <h1 className="text-xl font-bold  mb-3">{title}</h1>
           <p className="leading-relaxed mb-3">{shortdescription}</p>
-          <div className="flex items-center flex-wrap">
+          <div className="flex items-center flex-wrap justify-between">
+            <span className="text-orange-600 font-bold"> ${price}</span>
+            <Link href={`/products/${slug}`} key={id}>
+              <a className="text-red-600 inline-flex items-center font-bold md:mb-2 lg:mb-0">
+                Show Details
+                <FaArrowRight className="w-3 h-3 ml-2" />
+              </a>
+            </Link>
             <Link href={`/products/${slug}`} key={id}>
               <a className="text-orange-600 inline-flex items-center font-bold md:mb-2 lg:mb-0">
-                Learn More <FaArrowRight className="w-3 h-3 ml-2" />
+                Add to Cart <FaCartPlus className="w-3 h-3 ml-2" />
               </a>
             </Link>
           </div>

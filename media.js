@@ -17,5 +17,5 @@ export function getStrapiMedia(url) {
   }
 
   // Otherwise prepend the URL path with the Strapi URL
-  return `${process.env.url || "http://localhost:1347"}${url} || ` || url;
+  return `${process.env.url || "http://localhost:1347"}${url}` || url;
 }
