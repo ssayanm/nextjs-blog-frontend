@@ -14,6 +14,10 @@
   @apply transition duration-500 ease-in-out rounded shadow cursor-pointer transform mt-6 inline-block text-orange-600 bg-transparent border border-orange-600 p-4 font-bold hover:bg-orange-600 hover:text-white hover:-translate-y-1 hover:scale-110;
 }
 
+.btnalt {
+  @apply transition duration-500 ease-in-out rounded shadow cursor-pointer transform mt-6 text-orange-600 bg-transparent border border-orange-600 p-4 font-bold hover:bg-orange-600 hover:text-white hover:-translate-y-1 hover:scale-110;
+}
+
 .navlinks {
   @apply px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold hover:text-orange-600;
 }
