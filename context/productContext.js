@@ -1,6 +1,5 @@
 import { useEffect, createContext, useState } from "react";
 import axios from "axios";
-import BlogList from "../components/BlogList";
 
 export const ProductContext = createContext();
 
@@ -11,6 +10,19 @@ export const ProductProvider = ({ children }) => {
   // const { value, children } = props;
   useEffect(() => {
     setLoading(true);
+
+    // async function getProducts() {
+    //   try {
+    //     const response = await axios.get(`${process.env.url}/products/`);
+    //     const products = response.data;
+
+    //     setProducts(products);
+    //     setLoading(false);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // }
+
     axios.get(`${process.env.url}/products/`).then((response) => {
       const products = response.data;
 

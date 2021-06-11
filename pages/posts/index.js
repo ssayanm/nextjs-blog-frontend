@@ -2,14 +2,23 @@ import axios from "axios";
 import Link from "next/link";
 import BlogList from "../../components/BlogList";
 
+// export const getStaticProps = async () => {
+//   try {
+//     const res = await axios.get(`${process.env.url}/blogs/`);
+//     const blogs = res.data;
+//     return { props: { blogs } };
+//   } catch (error) {
+//     return { error };
+//   }
+// };
+
 export const getStaticProps = async () => {
-  try {
-    const res = await axios.get(`${process.env.url}/blogs/`);
-    const blogs = res.data;
-    return { props: { blogs } };
-  } catch (error) {
-    return { error };
-  }
+  const res = await fetch(`${process.env.url}/blogs/`);
+  const blogs = await res.json();
+
+  return {
+    props: { blogs },
+  };
 };
 
 const index = ({ blogs }) => {

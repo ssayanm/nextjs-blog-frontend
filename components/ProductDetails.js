@@ -20,9 +20,6 @@ const ProductDetails = ({ product }) => {
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <h2 className="text-sm title-font text-gray-500 tracking-widest">
-              BRAND NAME
-            </h2>
             <h1 className="text-3xl title-font font-medium mb-1">{title}</h1>
 
             <p className="leading-relaxed">{description}</p>

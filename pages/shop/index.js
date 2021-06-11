@@ -3,14 +3,23 @@ import Link from "next/link";
 
 import ProductList from "../../components/ProductList";
 
+// export const getStaticProps = async () => {
+//   try {
+//     const res = await axios.get(`${process.env.url}/products/`);
+//     const products = res.data;
+//     return { props: { products } };
+//   } catch (error) {
+//     return { error };
+//   }
+// };
+
 export const getStaticProps = async () => {
-  try {
-    const res = await axios.get(`${process.env.url}/products/`);
-    const products = res.data;
-    return { props: { products } };
-  } catch (error) {
-    return { error };
-  }
+  const res = await fetch(`${process.env.url}/products/`);
+  const products = await res.json();
+
+  return {
+    props: { products },
+  };
 };
 
 const index = ({ products }) => {

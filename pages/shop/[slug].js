@@ -4,7 +4,6 @@ export const getStaticPaths = async () => {
   const res = await fetch(`${process.env.url}/products/`);
   const data = await res.json();
 
-  console.log(data);
   // map data to an array of path objects with params (slug or id -> then needs to add toString)
   const paths = data.map((product) => {
     return {
@@ -19,18 +18,18 @@ export const getStaticPaths = async () => {
 };
 
 // for each individual page: get the data for that page
-export async function getStaticProps({ params }) {
+export const getStaticProps = async ({ params }) => {
   const { slug } = params;
 
   const res = await fetch(`${process.env.url}/products/?slug=${slug}`);
   const data = await res.json();
-  // console.log(data);
+
   const product = data[0];
 
   return {
     props: { product },
   };
-}
+};
 
 const Details = ({ product }) => {
   return (
