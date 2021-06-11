@@ -23,12 +23,7 @@ const BlogList = ({ blogs, showLink }) => {
         {/* Blog Card Wrapper*/}
         <div className="flex flex-wrap">
           {blogs.map((blog) => (
-            <div
-              className="w-full md:w-4/12 lg:mb-0 mb-12 px-4  "
-              key={blog.id}
-            >
-              <BlogCard {...blog} />
-            </div>
+            <BlogCard {...blog} key={blog.id} />
           ))}
         </div>
         <div className="flex justify-center lg:mt-24">

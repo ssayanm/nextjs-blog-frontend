@@ -5,7 +5,6 @@ import { getStrapiMedia } from "../media";
 import { FaArrowRight, FaCartPlus } from "react-icons/fa";
 
 const ProductCard = ({
-  id,
   title,
   slug,
   image,
@@ -14,7 +13,7 @@ const ProductCard = ({
   price,
 }) => {
   return (
-    <div className="w-full md:w-4/12  mb-10 px-4  ">
+    <div className="w-full md:w-3/12  mb-20 px-4 ">
       <div className="flex items-center flex-col  border border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <Image
           alt="Gym"
@@ -30,13 +29,13 @@ const ProductCard = ({
           <p className="leading-relaxed mb-3">{shortdescription}</p>
           <div className="flex items-center flex-wrap justify-between">
             <span className="text-orange-600 font-bold"> ${price}</span>
-            <Link href={`/products/${slug}`} key={id}>
+            <Link href={`/shop/${slug}`}>
               <a className="text-red-600 inline-flex items-center font-bold md:mb-2 lg:mb-0">
                 Show Details
                 <FaArrowRight className="w-3 h-3 ml-2" />
               </a>
             </Link>
-            <Link href={`/products/${slug}`} key={id}>
+            <Link href={`/shop/${slug}`}>
               <a className="text-orange-600 inline-flex items-center font-bold md:mb-2 lg:mb-0">
                 Add to Cart <FaCartPlus className="w-3 h-3 ml-2" />
               </a>

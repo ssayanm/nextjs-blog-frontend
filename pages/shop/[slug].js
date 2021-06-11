@@ -1,13 +1,14 @@
-import BlogDetails from "../../components/BlogDetails";
+import ProductDetails from "../../components/ProductDetails";
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${process.env.url}/blogs/`);
+  const res = await fetch(`${process.env.url}/products/`);
   const data = await res.json();
 
+  console.log(data);
   // map data to an array of path objects with params (slug or id -> then needs to add toString)
-  const paths = data.map((blog) => {
+  const paths = data.map((product) => {
     return {
-      params: { slug: blog.slug },
+      params: { slug: product.slug },
     };
   });
 
@@ -21,20 +22,20 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const res = await fetch(`${process.env.url}/blogs/?slug=${slug}`);
+  const res = await fetch(`${process.env.url}/products/?slug=${slug}`);
   const data = await res.json();
   // console.log(data);
-  const blog = data[0];
+  const product = data[0];
 
   return {
-    props: { blog },
+    props: { product },
   };
 }
 
-const Details = ({ blog }) => {
+const Details = ({ product }) => {
   return (
     <div>
-      <BlogDetails blog={blog} />
+      <ProductDetails product={product} />
     </div>
   );
 };
