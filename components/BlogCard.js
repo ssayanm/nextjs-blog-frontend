@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import { getStrapiMedia } from "../media";
 import { FaArrowRight } from "react-icons/fa";
 

@@ -5,7 +5,7 @@ import { FaCartPlus } from "react-icons/fa";
 
 const ProductDetails = ({ product }) => {
   const { title, slug, image, description, shortdescription, price } = product;
-  //   console.log(title);
+
   return (
     <section className="pt-48 pb-48 bg-black text-white">
       <div className="container px-4 mx-auto">

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BlogDetails = ({ blog }) => {
   const { title, content, author, image } = blog;
-  //   console.log(title);
+
   return (
     <section className="pt-48 pb-48 bg-black text-white">
       <div className="container px-4 mx-auto">
