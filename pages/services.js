@@ -21,12 +21,12 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap">
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
+        <div className="flex flex-wrap">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <h2 className="text-lg sm:text-xl font-medium title-font mb-2">
               Shooting Stars
             </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed text-base mb-4">
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>
@@ -36,11 +36,11 @@ const Services = () => {
               </a>
             </Link>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl  font-medium title-font mb-2">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <h2 className="text-lg sm:text-xl  font-medium title-font mb-2">
               The Catalyzer
             </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed text-base mb-4">
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>
@@ -50,11 +50,11 @@ const Services = () => {
               </a>
             </Link>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl  font-medium title-font mb-2">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <h2 className="text-lg sm:text-xl  font-medium title-font mb-2">
               Neptune
             </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed text-base mb-4">
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>
@@ -64,11 +64,11 @@ const Services = () => {
               </a>
             </Link>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl  font-medium title-font mb-2">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <h2 className="text-lg sm:text-xl  font-medium title-font mb-2">
               Melanchole
             </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed text-base mb-4">
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>

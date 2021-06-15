@@ -26,7 +26,7 @@ const BlogList = ({ blogs, showLink }) => {
             <BlogCard {...blog} key={blog.id} />
           ))}
         </div>
-        <div className="flex justify-center lg:mt-24">
+        <div className="flex justify-center">
           {showLink && (
             <Link href="/blog-posts" className="btn">
               <a className="btn">Read More</a>

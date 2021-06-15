@@ -12,37 +12,37 @@ export const ProductProvider = ({ children }) => {
   useEffect(() => {
     setLoading(true);
 
-    async function fetchData() {
-      try {
-        const res = await fetch(`${process.env.url}/products/`);
-        const products = await res.json();
-        setProducts(products);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-
     // async function fetchData() {
     //   try {
-    //     const result = await axios
-    //       .get(`${process.env.url}/products/`)
-    //       .then((response) => {
-    //         const products = response.data;
-
-    //         setProducts(products);
-    //         setLoading(false);
-    //       });
+    //     const res = await fetch(`${process.env.url}/products/`);
+    //     const products = await res.json();
+    //     setProducts(products);
     //   } catch (error) {
     //     console.error(error);
     //   }
     // }
 
-    axios.get(`${process.env.url}/products/`).then((response) => {
-      const products = response.data;
+    const getProducts = async () => {
+      try {
+        const response = await axios.get(`${process.env.url}/products/`);
+        const products = response.data;
+        setProducts(products);
+        setLoading(false);
+      } catch (err) {
+        // Handle Error Here
+        console.error(err);
+      }
+    };
 
-      setProducts(products);
-      setLoading(false);
-    });
+    getProducts();
+
+    // axios.get(`${process.env.url}/products/`).then((response) => {
+    //   const products = response.data;
+
+    //   setProducts(products);
+    //   setLoading(false);
+    // });
+
     return () => {};
   }, []);
 
