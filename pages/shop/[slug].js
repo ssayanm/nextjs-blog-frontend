@@ -1,7 +1,7 @@
 import ProductDetails from "../../components/ProductDetails";
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${process.env.url}/products/`);
+  const res = await fetch(`${process.env.NEXT_API_URL}/products/`);
   const data = await res.json();
 
   // map data to an array of path objects with params (slug or id -> then needs to add toString)
@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const { slug } = params;
 
-  const res = await fetch(`${process.env.url}/products/?slug=${slug}`);
+  const res = await fetch(`${process.env.NEXT_API_URL}/products/?slug=${slug}`);
   const data = await res.json();
 
   const product = data[0];
