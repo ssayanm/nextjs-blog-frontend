@@ -14,7 +14,7 @@ import ProductList from "../../components/ProductList";
 // };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${process.env.NEXT_API_URL}/products/`);
+  const res = await fetch(`${process.env.url}/products/`);
   const products = await res.json();
 
   return {

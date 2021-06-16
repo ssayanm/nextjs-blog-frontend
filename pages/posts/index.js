@@ -13,7 +13,7 @@ import BlogList from "../../components/BlogList";
 // };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${process.env.NEXT_API_URL}/blogs/`);
+  const res = await fetch(`${process.env.url}/blogs/`);
   const blogs = await res.json();
 
   return {

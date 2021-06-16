@@ -6,7 +6,7 @@ import Trainers from "../components/Trainers";
 
 export const getStaticProps = async () => {
   try {
-    const res = await axios.get(`${process.env.NEXT_API_URL}/blogs/`);
+    const res = await axios.get(`${process.env.url}/blogs/`);
     const blogs = res.data;
     return { props: { blogs } };
   } catch (error) {
