@@ -3,14 +3,7 @@ import Image from "next/image";
 import { getStrapiMedia } from "../media";
 import { FaArrowRight, FaCartPlus } from "react-icons/fa";
 
-const ProductCard = ({
-  title,
-  slug,
-  image,
-  description,
-  shortdescription,
-  price,
-}) => {
+const ProductCard = ({ title, slug, image, shortdescription, price }) => {
   return (
     <div className="w-full md:w-6/12  lg:w-3/12 mb-20 px-4 ">
       <div className="flex items-center flex-col  border border-gray-200 border-opacity-60 rounded-lg overflow-hidden">

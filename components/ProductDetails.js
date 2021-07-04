@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaCartPlus } from "react-icons/fa";
 
 const ProductDetails = ({ product }) => {
-  const { title, slug, image, description, shortdescription, price } = product;
+  const { title, slug, image, description, price } = product;
 
   return (
     <section className="pt-48 pb-48 bg-black text-white">
