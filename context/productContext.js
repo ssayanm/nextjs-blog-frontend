@@ -6,9 +6,7 @@ export const ProductContext = createContext();
 export const ProductProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
-  const [blogs, setBlogs] = useState([]);
 
-  // const { value, children } = props;
   useEffect(() => {
     setLoading(true);
 
@@ -35,13 +33,6 @@ export const ProductProvider = ({ children }) => {
     };
 
     getProducts();
-
-    // axios.get(`${process.env.url}/products/`).then((response) => {
-    //   const products = response.data;
-
-    //   setProducts(products);
-    //   setLoading(false);
-    // });
 
     return () => {};
   }, []);
