@@ -10,7 +10,7 @@ const Trainers = () => {
               Meet Our Trainers
             </h2>
             <p className="text-lg leading-relaxed m-4">
-              Our trainers are are here to dedicate the time and effort that you
+              Our trainers are here to dedicate the time and effort that you
               need to get in the best shape of your life
             </p>
           </div>
