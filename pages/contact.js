@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import Meta from "../components/Meta";
 
 const Contact = () => {

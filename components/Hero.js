@@ -43,7 +43,7 @@ const Hero = () => {
               </p>
               <Link href="/">
                 <a className="btn" data-aos="fade-up" data-aos-delay="800">
-                  Download Brochure
+                  Download Our Brochure
                 </a>
               </Link>
             </div>

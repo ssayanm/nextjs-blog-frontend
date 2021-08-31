@@ -1,5 +1,5 @@
-import axios from "axios";
-import Link from "next/link";
+// import axios from "axios";
+// import Link from "next/link";
 import BlogList from "../../components/BlogList";
 
 // export const getStaticProps = async () => {
