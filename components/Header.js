@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
+import Script from "next/script";
 
 const Header = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -13,6 +14,13 @@ const Header = (props) => {
         " flex flex-wrap items-center justify-between px-2 py-5"
       }
     >
+      <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" />
+      <div
+        hidden
+        id="snipcart"
+        data-api-key={`${process.env.NEXT_API_SNIP}`}
+      ></div>
+
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
