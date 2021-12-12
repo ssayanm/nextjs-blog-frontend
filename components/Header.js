@@ -14,13 +14,6 @@ const Header = (props) => {
         " flex flex-wrap items-center justify-between px-2 py-5"
       }
     >
-      <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" />
-      <div
-        hidden
-        id="snipcart"
-        data-api-key={`${process.env.NEXT_API_SNIP}`}
-      ></div>
-
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
@@ -167,6 +160,17 @@ const Header = (props) => {
                 </a>
               </Link>
             </li>
+
+            <button
+              class=""
+              className={
+                (props.transparent
+                  ? "snipcart-checkout lg:text-white  text-gray-800"
+                  : "snipcart-checkout text-gray-800 ") + " navlinks"
+              }
+            >
+              Cart
+            </button>
             <li className="flex items-center">
               <a
                 className={
