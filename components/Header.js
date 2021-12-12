@@ -162,7 +162,6 @@ const Header = (props) => {
             </li>
 
             <button
-              class=""
               className={
                 (props.transparent
                   ? "snipcart-checkout lg:text-white  text-gray-800"
